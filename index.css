@@ -1,4 +1,4 @@
-@keyframes spin {
+@keyframes blink {
   0%   {background-color: gold;}
   50% {background-color: white;}
   100%   {background-color: gold;}
@@ -21,17 +21,19 @@ h4 {
 	color:white;
 }
 A:link {
-	font-family:Arial;
+	font-family:'Arial';
 	font-size:25;
 	background-color:gold;
 	outline-style:solid;
 	outline-color:white;
 	transition:ease-in-out 0.3s;
+	color:white;
+	font-weight:bold;
 }
 A:hover {
 	font-size:30px;
 	outline-width:5px;
-	animation-name: spin;
+	animation-name: blink;
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
 }
@@ -42,5 +44,6 @@ body {
 	background-color:black;
 	background-image: url("coin3.png");
 	background-size:50px;
+	text-align:center;
 }
-img {width:200;border-style:solid;border-color:white}
+img {width:200;border-style:solid;border-color:white;}
